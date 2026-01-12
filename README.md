@@ -1,7 +1,7 @@
 <a href="https://github.com/typescript-package">
   <img
     src="https://avatars.githubusercontent.com/u/189665258?s=150&u=712e292bae048947d1f7d2020d7d38875c40e63a&v=4"
-    title="@angular.x/project - An Angular library for layout."
+    title="@angular.x/layout - An Angular library for layout."
   />
 </a>
 
@@ -41,7 +41,7 @@ An **Angular** library for layout.
 ## Installation
 
 ```bash
-npm install @angular.x/project --save-peer
+npm install @angular.x/layout --save-peer
 ```
 
 ## Api
@@ -52,7 +52,7 @@ import {
   Component,
   // Service.
   Service
-} from '@angular.x/project';
+} from '@angular.x/layout';
 ```
 
 ### Component
@@ -60,7 +60,7 @@ import {
 ### `Component`
 
 ```typescript
-import { Component } from '@angular.x/project';
+import { Component } from '@angular.x/layout';
 ```
 
 ### Service
@@ -68,7 +68,7 @@ import { Component } from '@angular.x/project';
 ### `Service`
 
 ```typescript
-import { Service } from '@angular.x/project';
+import { Service } from '@angular.x/layout';
 ```
 
 ## Contributing
@@ -137,21 +137,21 @@ MIT © angular.x ([license][angular-x-license])
 
 <!-- This package: angular.x  -->
   <!-- GitHub: badges -->
-  [angular-x-badge-issues]: https://img.shields.io/github/issues/angular-x/project
-  [angular-x-badge-forks]: https://img.shields.io/github/forks/angular-x/project
-  [angular-x-badge-stars]: https://img.shields.io/github/stars/angular-x/project
-  [angular-x-badge-license]: https://img.shields.io/github/license/angular-x/project
+  [angular-x-badge-issues]: https://img.shields.io/github/issues/angular-x/layout
+  [angular-x-badge-forks]: https://img.shields.io/github/forks/angular-x/layout
+  [angular-x-badge-stars]: https://img.shields.io/github/stars/angular-x/layout
+  [angular-x-badge-license]: https://img.shields.io/github/license/angular-x/layout
   <!-- GitHub: badges links -->
-  [angular-x-issues]: https://github.com/angular-x/project/issues
-  [angular-x-forks]: https://github.com/angular-x/project/network
-  [angular-x-license]: https://github.com/angular-x/project/blob/master/LICENSE
-  [angular-x-stars]: https://github.com/angular-x/project/stargazers
+  [angular-x-issues]: https://github.com/angular-x/layout/issues
+  [angular-x-forks]: https://github.com/angular-x/layout/network
+  [angular-x-license]: https://github.com/angular-x/layout/blob/master/LICENSE
+  [angular-x-stars]: https://github.com/angular-x/layout/stargazers
 <!-- This package -->
 
 <!-- Package: angular.x -->
   <!-- npm -->
-  [angular-x-npm-badge-svg]: https://badge.fury.io/js/@angular-x%2Fproject.svg
-  [angular-x-npm-badge]: https://badge.fury.io/js/@angular-x%2Fproject
+  [angular-x-npm-badge-svg]: https://badge.fury.io/js/@angular-x%2Flayout.svg
+  [angular-x-npm-badge]: https://badge.fury.io/js/@angular-x%2Flayout
 
 <!-- GIT -->
 [git-semver]: http://semver.org/
