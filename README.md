@@ -8,9 +8,9 @@
 ## @angular.x/layout
 
 <!-- npm badge -->
-[![npm version][angular.x-npm-badge-svg]][angular.x-npm-badge]
-[![GitHub issues][angular.x-badge-issues]][angular.x-issues]
-[![GitHub license][angular.x-badge-license]][angular.x-license]
+[![npm version][angular-x-npm-badge-svg]][angular-x-npm-badge]
+[![GitHub issues][angular-x-badge-issues]][angular-x-issues]
+[![GitHub license][angular-x-badge-license]][angular-x-license]
 
 An **Angular** library for layout.
 
@@ -132,26 +132,26 @@ How do I know when to release 1.0.0?
 
 ## License
 
-MIT © angular.x ([license][angular.x-license])
+MIT © angular.x ([license][angular-x-license])
 
 
 <!-- This package: angular.x  -->
   <!-- GitHub: badges -->
-  [angular.x-badge-issues]: https://img.shields.io/github/issues/angular.x/project
-  [angular.x-badge-forks]: https://img.shields.io/github/forks/angular.x/project
-  [angular.x-badge-stars]: https://img.shields.io/github/stars/angular.x/project
-  [angular.x-badge-license]: https://img.shields.io/github/license/angular.x/project
+  [angular-x-badge-issues]: https://img.shields.io/github/issues/angular-x/project
+  [angular-x-badge-forks]: https://img.shields.io/github/forks/angular-x/project
+  [angular-x-badge-stars]: https://img.shields.io/github/stars/angular-x/project
+  [angular-x-badge-license]: https://img.shields.io/github/license/angular-x/project
   <!-- GitHub: badges links -->
-  [angular.x-issues]: https://github.com/angular.x/project/issues
-  [angular.x-forks]: https://github.com/angular.x/project/network
-  [angular.x-license]: https://github.com/angular.x/project/blob/master/LICENSE
-  [angular.x-stars]: https://github.com/angular.x/project/stargazers
+  [angular-x-issues]: https://github.com/angular-x/project/issues
+  [angular-x-forks]: https://github.com/angular-x/project/network
+  [angular-x-license]: https://github.com/angular-x/project/blob/master/LICENSE
+  [angular-x-stars]: https://github.com/angular-x/project/stargazers
 <!-- This package -->
 
 <!-- Package: angular.x -->
   <!-- npm -->
-  [angular.x-npm-badge-svg]: https://badge.fury.io/js/@angular.x%2Fproject.svg
-  [angular.x-npm-badge]: https://badge.fury.io/js/@angular.x%2Fproject
+  [angular-x-npm-badge-svg]: https://badge.fury.io/js/@angular-x%2Fproject.svg
+  [angular-x-npm-badge]: https://badge.fury.io/js/@angular-x%2Fproject
 
 <!-- GIT -->
 [git-semver]: http://semver.org/
