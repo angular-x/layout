@@ -1,0 +1,89 @@
+@mixin horizontal {
+  --left-size: var(--ax-layout-left-width);
+  --right-size: var(--ax-layout-right-width);
+
+  grid-template-areas:
+    "left top right"
+    "left center right"
+    "left bottom right";
+  grid-template-columns: var(--left-size) 1fr var(--right-size);
+  grid-template-rows: var(--ax-layout-top-height) minmax(0, 1fr) var(--ax-layout-bottom-height);
+  gap: var(--ax-layout-gap);
+  height: 100vh;
+  overflow: hidden;
+
+  transition:
+    grid-template-columns var(--ax-duration) var(--ax-ease-in-out),
+    grid-template-rows var(--ax-duration) var(--ax-ease-in-out);
+
+  // Grid areas
+  .bottom { grid-area: bottom; }
+  .center { grid-area: center; min-width: 0; min-height: 0; overflow: auto; }
+  .left   { grid-area: left; min-width: 0; overflow: hidden; }
+  .right  { grid-area: right; min-width: 0; overflow: hidden; }
+  .top    { grid-area: top; min-width: 0; }
+
+  // Ensure content areas can shrink properly when asides collapse
+  .top,
+  .center,
+  .bottom {
+    min-width: 0;
+    min-height: 0;
+  }
+
+  /* pinned collapse */
+  &.left-collapsed:not(.left-overlay) {
+    --left-size: 0rem;
+    .left {
+      transform: translateX(calc(var(--ax-layout-left-width) * -1));
+    }
+  }
+
+  &.right-collapsed:not(.right-overlay) {
+    --right-size: 0rem;
+    .right {
+      transform: translateX(var(--ax-layout-right-width));
+    }
+  }
+
+  /* overlay mode */
+  &.left-overlay {
+    --left-size: 0rem;
+
+    .left {
+      z-index: 1001;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: var(--ax-layout-left-width);
+      height: 100vh;
+      box-shadow: var(--ax-left-overlay-box-shadow);
+    }
+
+    &.left-collapsed {
+      .left {
+        transform: translateX(var(--ax-layout-left-width));
+      }
+    }
+  }
+
+  &.right-overlay {
+    --right-size: 0rem;
+
+    .right {
+      z-index: 1001;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: var(--ax-layout-right-width);
+      height: 100vh;
+      box-shadow: var(--ax-right-overlay-box-shadow);
+    }
+
+    &.right-collapsed {
+      .right {
+        transform: translateX(var(--ax-layout-right-width));
+      }
+    }
+  }
+}

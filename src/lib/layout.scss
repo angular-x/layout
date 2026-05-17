@@ -1,0 +1,49 @@
+@use './horizontal.mixin';
+@use './vertical.mixin';
+
+:host {
+  --ax-layout-left-width: 16rem;
+  --ax-layout-right-width: 32rem;
+  --ax-layout-top-height: 5.1rem;
+  --ax-layout-bottom-height: 3rem;
+  --ax-layout-gap: 0.5rem;
+  --ax-left-background: rgba(255, 255, 255, 1);
+  --ax-right-background: rgba(255, 255, 255, 1);
+  --ax-left-overlay-box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  --ax-right-overlay-box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+
+  --ax-ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ax-ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ax-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ax-duration: 500ms;
+
+  display: grid;
+
+  // Common styles for asides
+  .left,
+  .right {
+    transform: translateX(0);
+    transition: transform var(--ax-duration) var(--ax-ease-in-out);
+    will-change: transform;
+  }
+
+  // Background colors for asides
+  .left {
+    background: var(--ax-left-background);
+  }
+  .right {
+    background: var(--ax-right-background);
+  }
+}
+
+@media (max-width: 599px) {
+  :host {
+    @include vertical.vertical;
+  }
+}
+
+@media (min-width: 600px) {
+  :host {
+    @include horizontal.horizontal;
+  }
+}

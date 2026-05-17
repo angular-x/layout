@@ -1,0 +1,49 @@
+@mixin vertical {
+  --ax-layout-left-width: 8rem;
+  --ax-layout-right-width: 8rem;
+
+  grid-template-areas:
+    "top"
+    "center"
+    "bottom";
+  grid-template-columns: 1fr;
+  grid-template-rows: var(--ax-layout-top-height) minmax(0, 1fr) var(--ax-layout-bottom-height);
+  height: 100vh;
+  overflow: hidden;
+
+  .top    { grid-area: top; }
+  .center { grid-area: center; overflow: auto; }
+  .bottom { grid-area: bottom; }
+
+  .left,
+  .right {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    z-index: 1001;
+  }
+
+  .left {
+    left: 0;
+    width: var(--ax-layout-left-width);
+    transform: translateX(calc(var(--ax-layout-left-width) * -1));
+    background: var(--ax-left-background);
+    box-shadow: var(--ax-left-overlay-box-shadow);
+  }
+
+  .right {
+    right: 0;
+    width: var(--ax-layout-right-width);
+    transform: translateX(var(--ax-layout-right-width));
+    background: var(--ax-right-background);
+    box-shadow: var(--ax-right-overlay-box-shadow);
+  }
+
+  &:not(.left-collapsed) .left {
+    transform: translateX(0);
+  }
+
+  &:not(.right-collapsed) .right {
+    transform: translateX(0);
+  }
+}
