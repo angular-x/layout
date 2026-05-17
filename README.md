@@ -137,8 +137,8 @@ MIT © angular.x ([license][package-license])
 
 <!-- Package: angular.x -->
   <!-- npm -->
-  [package-npm-badge-svg]: https://badge.fury.io/js/@angular-x%2Flayout.svg
-  [package-npm-badge]: https://badge.fury.io/js/@angular-x%2Flayout
+  [package-npm-badge-svg]: https://badge.fury.io/js/@angular.x%2Flayout.svg
+  [package-npm-badge]: https://badge.fury.io/js/@angular.x%2Flayout
 
 <!-- GIT -->
 [git-semver]: http://semver.org/
