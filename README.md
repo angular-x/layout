@@ -124,21 +124,21 @@ MIT © angular.x ([license][package-license])
 
 <!-- This package: angular.x  -->
   <!-- GitHub: badges -->
-  [package-badge-issues]: https://img.shields.io/github/issues/angular-x/layout
-  [package-badge-forks]: https://img.shields.io/github/forks/angular-x/layout
-  [package-badge-stars]: https://img.shields.io/github/stars/angular-x/layout
-  [package-badge-license]: https://img.shields.io/github/license/angular-x/layout
+  [package-badge-issues]: https://img.shields.io/github/issues/angular.x/layout
+  [package-badge-forks]: https://img.shields.io/github/forks/angular.x/layout
+  [package-badge-stars]: https://img.shields.io/github/stars/angular.x/layout
+  [package-badge-license]: https://img.shields.io/github/license/angular.x/layout
   <!-- GitHub: badges links -->
-  [package-issues]: https://github.com/angular-x/layout/issues
-  [package-forks]: https://github.com/angular-x/layout/network
-  [package-license]: https://github.com/angular-x/layout/blob/master/LICENSE
-  [package-stars]: https://github.com/angular-x/layout/stargazers
+  [package-issues]: https://github.com/angular.x/layout/issues
+  [package-forks]: https://github.com/angular.x/layout/network
+  [package-license]: https://github.com/angular.x/layout/blob/master/LICENSE
+  [package-stars]: https://github.com/angular.x/layout/stargazers
 <!-- This package -->
 
 <!-- Package: angular.x -->
   <!-- npm -->
-  [package-npm-badge-svg]: https://badge.fury.io/js/@angular-x%2Flayout.svg
-  [package-npm-badge]: https://badge.fury.io/js/@angular-x%2Flayout
+  [package-npm-badge-svg]: https://badge.fury.io/js/@angular.x%2Flayout.svg
+  [package-npm-badge]: https://badge.fury.io/js/@angular.x%2Flayout
 
 <!-- GIT -->
 [git-semver]: http://semver.org/
