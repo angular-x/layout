@@ -1,21 +1,5 @@
-
-@if (showTop()) {
-  <ax-layout-top><ng-content select="[slot=top]"></ng-content></ax-layout-top>
-}
-
-@if (showLeft()) {
-  <ax-layout-left [collapsed]="leftCollapsed()" (onCollapsed)="leftCollapsedChanged($event)">
-    <button (click)="collapseLeft()">Hide</button>
-    <ng-content select="[slot=left]"></ng-content>
-  </ax-layout-left>
-}
-
-<ax-layout-center ><ng-content select="[slot=center]"></ng-content></ax-layout-center>
-
-@if (showBottom()) {
-  <ax-layout-bottom><ng-content select="[slot=bottom]"></ng-content></ax-layout-bottom>
-}
-
-@if (showRight()) {
-  <ax-layout-right><ng-content select="[slot=right]"></ng-content></ax-layout-right>
-}
+<header class="top"><ng-content select="[slot=top]"></ng-content></header>
+<aside class="left"><ng-content select="[slot=left]"></ng-content></aside>
+<main class="center"><ng-content select="[slot=center]"></ng-content></main>
+<aside class="right"><ng-content select="[slot=right]"></ng-content></aside>
+<footer class="bottom"><ng-content select="[slot=bottom]"></ng-content></footer>
