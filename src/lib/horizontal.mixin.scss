@@ -62,7 +62,7 @@
 
     &.left-collapsed {
       .left {
-        transform: translateX(var(--ax-layout-left-width));
+        transform: translateX(calc(var(--ax-layout-left-width) * -1));
       }
     }
   }
