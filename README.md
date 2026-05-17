@@ -1,6 +1,6 @@
-<a href="https://github.com/typescript-package">
+<a href="https://github.com/angular.x">
   <img
-    src="https://avatars.githubusercontent.com/u/228049771?s=400&u=685bb186a6db698ce291ea8e3d066c708678bd47&v=4"
+    src="https://avatars.githubusercontent.com/u/228049771?s=250&u=685bb186a6db698ce291ea8e3d066c708678bd47&v=4"
     title="@angular.x/layout - An Angular library for layout."
   />
 </a>
