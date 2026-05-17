@@ -1,6 +1,6 @@
 {
   "name": "@angular.x/layout",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "wwwdev.io <dev@wwwdev.io>",
   "description": "An Angular library for app layouts.",
   "license": "MIT",
@@ -13,9 +13,8 @@
     "@angular/core": "^21.2.13"
   },
   "scripts": {
-    "prepublishOnly": "npm install rimraf && npm run pkg && npm run clean",
-    "pkg": "npm pkg delete module fesm2022 dependencies",
-    "clean": "./node_modules/rimraf/dist/esm/bin.mjs ./fesm2022 ./node_modules && npm pkg delete scripts"
+    "prepublishOnly": "npm run pkg",
+    "pkg": "npm pkg delete dependencies"
   },
   "repository": {
     "type": "git",
