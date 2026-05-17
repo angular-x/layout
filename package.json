@@ -1,6 +1,6 @@
 {
   "name": "@angular.x/layout",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "wwwdev.io <dev@wwwdev.io>",
   "description": "An Angular library for app layouts.",
   "license": "MIT",
