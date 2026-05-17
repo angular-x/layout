@@ -1,6 +1,6 @@
 <a href="https://github.com/typescript-package">
   <img
-    src="https://avatars.githubusercontent.com/u/189665258?s=150&u=712e292bae048947d1f7d2020d7d38875c40e63a&v=4"
+    src="https://avatars.githubusercontent.com/u/228049771?s=400&u=685bb186a6db698ce291ea8e3d066c708678bd47&v=4"
     title="@angular.x/layout - An Angular library for layout."
   />
 </a>
@@ -8,28 +8,22 @@
 ## @angular.x/layout
 
 <!-- npm badge -->
-[![npm version][angular-x-npm-badge-svg]][angular-x-npm-badge]
-[![GitHub issues][angular-x-badge-issues]][angular-x-issues]
-[![GitHub license][angular-x-badge-license]][angular-x-license]
+[![npm version][package-npm-badge-svg]][package-npm-badge]
+[![GitHub issues][package-badge-issues]][package-issues]
+[![GitHub license][package-badge-license]][package-license]
 
-An **Angular** library for layout.
+An **Angular** library for app layouts.
 
 ## Features
 
-- Named layout regions: left, right, top, bottom, center
-- Sidebar and panel components that can be shown, hidden, or collapsed
-- Supports both full DOM removal and visual hiding via CSS
-- Works seamlessly with Angular’s inputs, outputs, and content projection
-- Designed for dashboard, admin, or enterprise-style applications
+
 
 ## Table of contents
 
 - [Installation](#installation)
 - [Api](#api)
   - Component
-    - [`Component`](#component)
-  - Service
-    - [`Service`](#service)
+    - [`Layout`](#layout)
 - [Contributing](#contributing)
 - [Support](#support)
 - [Code of Conduct](#code-of-conduct)
@@ -49,26 +43,16 @@ npm install @angular.x/layout --save-peer
 ```typescript
 import {
   // Component.
-  Component,
-  // Service.
-  Service
+  Layout,
 } from '@angular.x/layout';
 ```
 
 ### Component
 
-### `Component`
+### `Layout`
 
 ```typescript
-import { Component } from '@angular.x/layout';
-```
-
-### Service
-
-### `Service`
-
-```typescript
-import { Service } from '@angular.x/layout';
+import { Layout } from '@angular.x/layout';
 ```
 
 ## Contributing
@@ -81,19 +65,23 @@ If you find this package useful and would like to support its and general develo
 
 Support via:
 
-- [Stripe](https://donate.stripe.com/dR614hfDZcJE3wAcMM)
-- [Revolut](https://checkout.revolut.com/pay/048b10a3-0e10-42c8-a917-e3e9cb4c8e29)
-- [GitHub](https://github.com/sponsors/angular-package/sponsorships?sponsor=sciborrudnicki&tier_id=83618)
+- [4Fund](https://4fund.com/bruubs)
 - [DonorBox](https://donorbox.org/become-a-sponsor-to-the-angular-package?default_interval=o)
+- [GitHub](https://github.com/sponsors/angular-package/sponsorships?sponsor=sciborrudnicki&tier_id=83618)
+- [Ko-fi](https://ko-fi.com/sterblack)
+- [OpenCollective](https://opencollective.com/sterblack)
 - [Patreon](https://www.patreon.com/checkout/angularpackage?rid=0&fan_landing=true&view_as=public)
+- [PayPal](https://paypal.me/sterblack)
+- [Stripe](https://donate.stripe.com/dR614hfDZcJE3wAcMM)
+- ~~[Revolut](https://checkout.revolut.com/pay/048b10a3-0e10-42c8-a917-e3e9cb4c8e29)~~
 
 or via Trust Wallet
 
-- [XLM](https://link.trustwallet.com/send?coin=148&address=GAFFFB7H3LG42O6JA63FJDRK4PP4JCNEOPHLGLLFH625X2KFYQ4UYVM4)
-- [USDT (BEP20)](https://link.trustwallet.com/send?coin=20000714&address=0xA0c22A2bc7E37C1d5992dFDFFeD5E6f9298E1b94&token_id=0x55d398326f99059fF775485246999027B3197955)
-- [ETH](https://link.trustwallet.com/send?coin=60&address=0xA0c22A2bc7E37C1d5992dFDFFeD5E6f9298E1b94)
-- [BTC](https://link.trustwallet.com/send?coin=0&address=bc1qnf709336tfl57ta5mfkf4t9fndhx7agxvv9svn)
 - [BNB](https://link.trustwallet.com/send?coin=20000714&address=0xA0c22A2bc7E37C1d5992dFDFFeD5E6f9298E1b94)
+- [BTC](https://link.trustwallet.com/send?coin=0&address=bc1qnf709336tfl57ta5mfkf4t9fndhx7agxvv9svn)
+- [ETH](https://link.trustwallet.com/send?coin=60&address=0xA0c22A2bc7E37C1d5992dFDFFeD5E6f9298E1b94)
+- [USDT (BEP20)](https://link.trustwallet.com/send?coin=20000714&address=0xA0c22A2bc7E37C1d5992dFDFFeD5E6f9298E1b94&token_id=0x55d398326f99059fF775485246999027B3197955)
+- [XLM](https://link.trustwallet.com/send?coin=148&address=GAFFFB7H3LG42O6JA63FJDRK4PP4JCNEOPHLGLLFH625X2KFYQ4UYVM4)
 
 Thanks for your support!
 
@@ -132,26 +120,25 @@ How do I know when to release 1.0.0?
 
 ## License
 
-MIT © angular.x ([license][angular-x-license])
-
+MIT © angular.x ([license][package-license])
 
 <!-- This package: angular.x  -->
   <!-- GitHub: badges -->
-  [angular-x-badge-issues]: https://img.shields.io/github/issues/angular-x/layout
-  [angular-x-badge-forks]: https://img.shields.io/github/forks/angular-x/layout
-  [angular-x-badge-stars]: https://img.shields.io/github/stars/angular-x/layout
-  [angular-x-badge-license]: https://img.shields.io/github/license/angular-x/layout
+  [package-badge-issues]: https://img.shields.io/github/issues/angular-x/layout
+  [package-badge-forks]: https://img.shields.io/github/forks/angular-x/layout
+  [package-badge-stars]: https://img.shields.io/github/stars/angular-x/layout
+  [package-badge-license]: https://img.shields.io/github/license/angular-x/layout
   <!-- GitHub: badges links -->
-  [angular-x-issues]: https://github.com/angular-x/layout/issues
-  [angular-x-forks]: https://github.com/angular-x/layout/network
-  [angular-x-license]: https://github.com/angular-x/layout/blob/master/LICENSE
-  [angular-x-stars]: https://github.com/angular-x/layout/stargazers
+  [package-issues]: https://github.com/angular-x/layout/issues
+  [package-forks]: https://github.com/angular-x/layout/network
+  [package-license]: https://github.com/angular-x/layout/blob/master/LICENSE
+  [package-stars]: https://github.com/angular-x/layout/stargazers
 <!-- This package -->
 
 <!-- Package: angular.x -->
   <!-- npm -->
-  [angular-x-npm-badge-svg]: https://badge.fury.io/js/@angular-x%2Flayout.svg
-  [angular-x-npm-badge]: https://badge.fury.io/js/@angular-x%2Flayout
+  [package-npm-badge-svg]: https://badge.fury.io/js/@angular-x%2Flayout.svg
+  [package-npm-badge]: https://badge.fury.io/js/@angular-x%2Flayout
 
 <!-- GIT -->
 [git-semver]: http://semver.org/
