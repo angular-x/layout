@@ -31,6 +31,13 @@
     min-height: 0;
   }
 
+  .left {
+    min-width: var(--ax-layout-left-width);
+  }
+  .right {
+    min-width: var(--ax-layout-right-width);
+  }
+
   /* pinned collapse */
   &.left-collapsed:not(.left-overlay) {
     --left-size: 0rem;
