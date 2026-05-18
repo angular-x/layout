@@ -14,12 +14,9 @@
 
 An **Angular** library for app layouts.
 
-## Features
-
-
-
 ## Table of contents
 
+- [Demo](#demo)
 - [Installation](#installation)
 - [Api](#api)
   - Component
@@ -31,6 +28,10 @@ An **Angular** library for app layouts.
   - [Commit](#commit)
   - [Versioning](#versioning)
 - [License](#license)
+
+## Demo
+
+You can find a demo of the package in the [demo](https://github.com/angular-x/layout/tree/main/demo) folder.
 
 ## Installation
 
