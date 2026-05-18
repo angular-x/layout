@@ -1,0 +1,59 @@
+<ax-layout
+  [class.left-collapsed]="leftCollapsed()"
+  [class.right-collapsed]="rightCollapsed()"
+  [class.left-overlay]="leftOverlay()"
+  [class.right-overlay]="rightOverlay()"
+  class="debug-grid"
+>
+  <!-- Top -->
+  <div slot="top" class="slot-top">
+    <span class="area-label">top</span>
+    <div class="box">
+      @if (leftCollapsed()) {
+      <button (click)="toggleLeftCollapsed()">&rarr;</button>
+      } @else {
+      <button (click)="toggleLeftCollapsed()">&larr;</button>
+      }
+      &nbsp;
+      @if (rightCollapsed()) {
+      <button (click)="toggleRightCollapsed()">&larr;</button>
+      } @else {
+      <button (click)="toggleRightCollapsed()">&rarr;</button>
+      }
+    </div>
+  </div>
+
+  <!-- Left -->
+  <div slot="left" class="slot-left">
+    <span class="area-label">left</span>
+    <div class="box">
+      <button (click)="toggleLeftOverlay()">o</button>
+      &nbsp;
+      <button (click)="toggleLeftCollapsed()">&larr;</button>
+    </div>
+  </div>
+
+  <!-- Center -->
+  <div slot="center" class="slot-center" style="padding: 1rem; height: 3000px">
+    <span class="area-label">center</span>
+    <router-outlet></router-outlet>
+  </div>
+
+  <!-- Right -->
+  <div slot="right" class="slot-right">
+    <span class="area-label">right</span>
+    <div class="box">
+      <button (click)="toggleRightOverlay()">o</button>
+      &nbsp;
+      <button (click)="toggleRightCollapsed()">&rarr;</button>
+    </div>
+  </div>
+
+  <!-- Bottom -->
+  <div slot="bottom" class="slot-bottom">
+    <span class="area-label">bottom</span>
+    <div class="box">
+      &nbsp;
+    </div>
+  </div>
+</ax-layout>

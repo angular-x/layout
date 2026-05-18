@@ -18,6 +18,7 @@
   --ax-duration: 500ms;
 
   display: grid;
+  gap: var(--ax-layout-gap);
 
   // Common styles for asides
   .left,
