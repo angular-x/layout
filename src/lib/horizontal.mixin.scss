@@ -8,7 +8,6 @@
     "left bottom right";
   grid-template-columns: var(--left-size) 1fr var(--right-size);
   grid-template-rows: var(--ax-layout-top-height) minmax(0, 1fr) var(--ax-layout-bottom-height);
-  gap: var(--ax-layout-gap);
   height: 100vh;
   overflow: hidden;
 
